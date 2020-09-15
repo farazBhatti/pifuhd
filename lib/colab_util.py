@@ -38,7 +38,8 @@ from IPython.display import HTML
 from base64 import b64encode
 
 # Data structures and functions for rendering
-from pytorch3d.renderer.mesh import Meshes, Textures
+from pytorch3d.renderer.mesh import Textures
+from pytorch3d.structures import Meshes
 #from pytorch3d.structures import Meshes, Textures
 from pytorch3d.renderer import (
     look_at_view_transform,

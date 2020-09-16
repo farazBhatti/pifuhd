@@ -113,8 +113,8 @@ def generate_video_from_obj(obj_path, image_path, video_path, renderer):
     # Load obj file
     verts_rgb_colors = get_verts_rgb_colors(obj_path)
     verts_rgb_colors = torch.from_numpy(verts_rgb_colors).to(device)
-    textures = TexturesVertex(verts_rgb=verts_rgb_colors) 
-    wo_textures = TexturesVertex(verts_rgb=torch.ones_like(verts_rgb_colors)*0.75)    
+    textures = Textures(verts_rgb=verts_rgb_colors)
+    wo_textures = Textures(verts_rgb=torch.ones_like(verts_rgb_colors)*0.75) 
 
 
 
